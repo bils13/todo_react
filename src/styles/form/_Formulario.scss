@@ -1,0 +1,46 @@
+.form {
+    &__title {
+        margin-top: 72px;
+        margin-left: 190px;
+        margin-bottom: 32px;
+        font-family: $primaryFont;
+        font-size: 48px;
+        color: $primaryColor;
+    }
+    &__input {
+        display: flex;
+        width: 600px;
+        height: 58px;
+        margin-left: 190px;
+        border: 1px solid #EEEEEE;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin-bottom: 55px;
+        input {
+            width: 84%;
+            padding: 1em;
+            border: none;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            color: #B1BACB;
+            outline: 0;
+            &:focus {
+                color: rgb(53, 53, 53);
+            }
+        }
+        button {
+            width: 84px;
+            height: 44px;
+            border: none;
+            color: #fff;
+            background-color: $secondColor;
+            border: 1px solid #2D70FD;
+            border-radius: 4px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

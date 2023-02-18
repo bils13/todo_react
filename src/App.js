@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Form from './Components/Form'
+import Task from './Components/Task'
+import Rodape from './Components/Rodape'
 
-function App() {
+export default () => {
+  const [tasks, setTasks] = useState([])
+  const [data, setData] = useState(0)
+  const childToParent = (resultadoDoFilho) => {
+    resultadoDoFilho==1 ? setData(resultadoDoFilho + data) : setData(data-1)
+  }
+  
+  const clear = () => {
+    setTasks([])
+    setData(0)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg'>
+      <div className='formAndTask'>
+          <Form registeredTask={task => setTasks([...tasks, task])}></Form>
+          {tasks.map(task => <Task task={task.name} key={task.name} counter={childToParent}/>)}
+          <Rodape counter={data} clear={clear}/>
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;

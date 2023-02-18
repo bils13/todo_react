@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    &__line {
+        border-bottom: 1px solid #EEEEEE;
+        width: 70%;
+        margin-bottom: 24px;
+    }
+    &__options {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #B1BACB;
+            &:hover {
+                font-weight: 600;
+                color: #8d8b8b;
+                cursor: pointer;
+            }
+        }
+    }
+}

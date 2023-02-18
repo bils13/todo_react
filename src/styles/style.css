@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eceef8;
+}
+
+.formAndTask {
+  background-color: #fff;
+  border-radius: 32px;
+  width: 1000px;
+  box-shadow: 0px 0px 4px rgba(0, 23, 71, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
+  margin-top: 72px;
+  margin-left: 190px;
+  margin-bottom: 32px;
+  font-family: "Rubik", sans-serif;
+  font-size: 48px;
+  color: #11175E;
+}
+.form__input {
+  display: flex;
+  width: 600px;
+  height: 58px;
+  margin-left: 190px;
+  border: 1px solid #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 55px;
+}
+.form__input input {
+  width: 84%;
+  padding: 1em;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #B1BACB;
+  outline: 0;
+}
+.form__input input:focus {
+  color: rgb(53, 53, 53);
+}
+.form__input button {
+  width: 84px;
+  height: 44px;
+  border: none;
+  color: #fff;
+  background-color: #2D70FD;
+  border: 1px solid #2D70FD;
+  border-radius: 4px;
+}
+.form__input button:hover {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.footer__line {
+  border-bottom: 1px solid #EEEEEE;
+  width: 70%;
+  margin-bottom: 24px;
+}
+.footer__options {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__options h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #B1BACB;
+}
+.footer__options h4:hover {
+  font-weight: 600;
+  color: #8d8b8b;
+  cursor: pointer;
+}
+
+.task {
+  margin-left: 210px;
+  margin-bottom: 38px;
+  display: flex;
+  align-items: center;
+}
+.task input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-right: 16px;
+  border-radius: 100%;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+}
+.task p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #001747;
+}
+.task p:hover {
+  color: #2D70FD;
+  cursor: pointer;
+}
+.task .selected-text {
+  text-decoration: line-through;
+  color: #8F98A8;
+}
+.task .selected-text:hover {
+  color: #8F98A8;
+  cursor: default;
+}
+.task .selected-input {
+  background-color: #00D8A7;
+}/*# sourceMappingURL=style.css.map */
